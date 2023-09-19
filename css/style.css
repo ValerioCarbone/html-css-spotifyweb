@@ -134,6 +134,15 @@ TOOLBAR
     padding: 0 10px;
 }
 
+.toolbar-lft{
+    flex-shrink: 0;
+
+}
+
+.toolbar-icon-container{
+    gap: 14px;
+}
+
 
 
 
