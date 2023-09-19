@@ -125,6 +125,17 @@ TOOLBAR
     background-color: var(--Dark-grey);
 }
 
+.toolbar-img {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.toolbar-container{
+    padding: 0 10px;
+}
+
+
+
 
 /* 
 MEDIA QUERY 
