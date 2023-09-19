@@ -92,8 +92,6 @@ MAIN
 }
 
 .app-container
-
-
 /* 
 MAIN-APP 
 */
@@ -123,6 +121,7 @@ TOOLBAR
     height: 90px;
     flex-shrink: 0;
     background-color: var(--Dark-grey);
+    color: white;
 }
 
 .toolbar-img {
@@ -130,19 +129,38 @@ TOOLBAR
     aspect-ratio: 1;
 }
 
-.toolbar-container{
+.toolbar-container {
     padding: 0 10px;
+    max-height: 100%;
 }
 
-.toolbar-lft{
+.toolbar-lft {
     flex-shrink: 0;
 
 }
 
-.toolbar-icon-container{
+.toolbar-icon-container {
     gap: 14px;
 }
 
+.bar {
+    width: 240px;
+    height: 4px;
+    background-color: #3b3b3b;
+    position: relative;
+    border-radius: 20px;
+}
+
+.bar::after {
+    content: '';
+    width: 25%;
+    height: 100%;
+    background-color: var(--Grey);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+}
 
 
 
