@@ -133,30 +133,29 @@ SIDE
     overflow: hidden;
 }
 
-.playlist{
+.playlist {
     margin-bottom: auto;
-    color:#6E6E6E ;
+    color: #6E6E6E;
 }
 
-.side-toolbar-item{
+.side-toolbar-item {
     color: #6E6E6E;
     font-weight: 600;
     font-size: 14px;
-    padding: 6px 14px;
-    width: 230px;
+    width: 50px;
     font-size: 14px;
+    padding: 4px 0;
 }
 
-.side-home{
+.side-home {
     position: relative;
 }
 
-.side-icon{
-    width: 10%;
-    margin-right: 6px;   
+.side-icon {
+    width: 35%;
 }
 
-.side-home::after{
+.side-home::after {
     content: "";
     height: 100%;
     width: 3px;
@@ -168,14 +167,30 @@ SIDE
 
 }
 
-.logo-lg{
-    width: 130px;
-    padding: 24px 0px 24px 14px;
+.logo {
+    width: 50px;
+}
+
+.logo-sm {
+    width: 40%;
+    padding: 0 auto;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.logo-lg,
+.logo-sm {
+    display: inline-block;
+}
+
+.logo-lg {
+    display: none;
 }
 
 
 
-.add-button{
+
+.add-button {
     background-color: var(--Grey);
     color: #000000;
     font-size: 18px;
@@ -183,43 +198,41 @@ SIDE
     padding: 8px 10px;
 }
 
-.sidebar-playlist-item{
-    margin: 14px 12px ;
-    color:#6E6E6E;
+.sidebar-playlist-item {
+    margin: 14px 12px;
+    color: #6E6E6E;
     font-size: 14px;
     font-weight: 600;
 }
 
-.sidebar-section-title{
+.sidebar-section-title {
     color: white;
-    margin: 14px 12px ;
+    margin: 14px 12px;
     font-weight: 700;
 }
 
 .playlist span,
 .sidebar-cta span,
 .sidebar-cta p,
-.profile p{
+.profile p {
     display: inline-block;
 }
 
-.sidebar-cta p{
+.sidebar-cta p {
     font-size: 12px;
 }
 
-.sidebar-cta{
+.sidebar-cta {
     color: #6E6E6E;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.download{
-    margin-left: 12px;
-    margin-right: 12px;
-    width: 206px;
+.download {
+    width: 50px;
 }
 
-.download::after{
+.download::after {
     content: "";
     background-color: #6E6E6E;
     width: 100%;
@@ -227,37 +240,47 @@ SIDE
     display: block;
 }
 
-.download-button{
+.download-button {
     background-color: #000000;
     border: 1px solid #6E6E6E;
     border-radius: 999px;
     aspect-ratio: 1;
     padding: 1px 3px;
     font-size: 6px;
-    margin-right: 6px;
 }
 
-.profile{
-    margin: 10px 12px;
+.profile {
+    width: 50px;
+    padding: 12px 0;
 }
 
-.profile-img{
-    width: 16px;
-    margin-right: 10px;    
+.profile-img {
+    width: 18px;
 }
 
-.profile-svg{
+.profile-svg {
     background-color: var(--Grey);
     border-radius: 999px;
     width: 100%;
     aspect-ratio: 1;
-    
+
 }
 
-.profile-name{
+.profile-name {
     color: white;
     font-weight: 600;
     font-size: 12px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+.side-icon-text,
+.playlist,
+.sidebar-footer p,
+.download::after {
+    display: none;
 }
 
 
@@ -430,6 +453,42 @@ MEDIA QUERY
     .toolbar-icon-container {
         gap: 24px;
     }
+
+    .logo-lg {
+        display: block;
+        width: 130px;
+    }
+
+    .logo-sm {
+        display: none;
+    }
+
+    .sidebar {
+        align-items: flex-start;
+    }
+
+    .side-toolbar-item {
+        width: 230px;
+        padding: 6px 14px;
+    }
+
+    .logo {
+        width: 206px;
+        padding: 24px 0px 24px 14px;
+    }
+
+    .download {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 206px;
+    }
+
+    .download-button {
+        margin-right: 6px;
+    }
+    
+    .profile {
+        margin: 10px 12px;
 
 }
 

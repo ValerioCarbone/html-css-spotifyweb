@@ -16,24 +16,28 @@
     <main>
         <div class="main-container column">
             <div class="app row">
-                <aside class="sidebar column align-items-start">
-                    <figure class="logo-lg">
-                        <img src="./img/logo.svg" alt="">
+                <aside class="sidebar column align-items-center">
+                    <figure class="logo row justifycon-center">
+                        <img class="logo-lg" src="./img/logo.svg" alt="">
+                        <img class="logo-sm" src="./img/logo-small.svg" alt="">
                     </figure>
                     <ul class="side-toolbar">
                         <li>
-                            <a  class="side-toolbar-item side-home row align-items-center" href="#">
-                                <img class="side-icon" src="./img/home.svg" alt=""> <p class="side-icon-text">Home</p>
+                            <a class="side-toolbar-item side-home row align-items-center justifycon-center" href="#">
+                                <img class="side-icon" src="./img/home.svg" alt="">
+                                <p class="side-icon-text">Home</p>
                             </a>
                         </li>
                         <li>
-                            <a  class="side-toolbar-item row align-items-center" href="#">
-                                <img class="side-icon" src="./img/search.svg" alt=""> <p class="side-icon-text">Cerca</p>
+                            <a class="side-toolbar-item row align-items-center justifycon-center" href="#">
+                                <img class="side-icon" src="./img/search.svg" alt="">
+                                <p class="side-icon-text">Cerca</p>
                             </a>
                         </li>
                         <li>
-                            <a  class="side-toolbar-item row align-items-center" href="#">
-                                <img class="side-icon" src="./img/libreria.svg" alt=""> <p class="side-icon-text">La tua libreria</p>
+                            <a class="side-toolbar-item row align-items-center justifycon-center" href="#">
+                                <img class="side-icon" src="./img/libreria.svg" alt="">
+                                <p class="side-icon-text">La tua libreria</p>
                             </a>
                         </li>
                     </ul>
@@ -43,7 +47,9 @@
                                 <h4>PLAYLIST</h4>
                             </li>
                             <li class="sidebar-playlist-item">
-                                <span class="add-button"><i class="fa-solid fa-plus"></i></span> Crea Playlist
+                                <a href="#">
+                                    <span class="add-button"><i class="fa-solid fa-plus"></i></span> Crea Playlist
+                                </a>
                             </li>
                             <li class="sidebar-playlist-item">Nome Playlist</li>
                             <li class="sidebar-playlist-item">Nome Playlist</li>
@@ -53,17 +59,24 @@
                             <li class="sidebar-playlist-item">Nome Playlist</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="sidebar-footer">
                         <div class="download">
-                            <div class="sidebar-cta row align-items-center">
-                                <span class="download-button"><i class="fa-solid fa-arrow-down"></i></span> <p>Installa app</p>
+                            <div class="sidebar-cta row align-items-center justifycon-center">
+                                <a href="#">
+                                    <span class="download-button"><i class="fa-solid fa-arrow-down"></i></span>
+                                    <p>Installa app</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="profile row align-items-center">
+                        <div class="profile row align-items-center justifycon-center">
                             <figure class="profile-img">
-                                <img class="profile-svg" src="./img/profile.svg" alt="">
+                                <a href="#">
+                                    <img class="profile-svg" src="./img/profile.svg" alt="">
+                                </a>
                             </figure>
-                            <p class="profile-name">John Doe</p>
+                            <a href="#">
+                                <p class="profile-name">John Doe</p>
+                            </a>
                         </div>
                     </div>
                 </aside>
