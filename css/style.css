@@ -143,12 +143,28 @@ SIDE
     font-weight: 600;
     font-size: 14px;
     padding: 8px 12px;
+    width: 230px;
 }
 
 .side-home{
-    border-left: 3px solid var(--Light-Green);
+    position: relative;
 }
 
+.side-logo{
+    width: 80px;
+}
+
+.side-home::after{
+    content: "";
+    height: 100%;
+    width: 3px;
+    left: 0%;
+    background-color: var(--Light-Green);
+    display: block;
+    position: absolute;
+    top: 0%;
+
+}
 
 
 /* 
