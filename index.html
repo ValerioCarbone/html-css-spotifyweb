@@ -28,14 +28,16 @@
             <div class="toolbar">
                 <div class="toolbar-container row justifycon-between align-items-center">
                     <div class="toolbar-left row align-items-center">
-                        <figure>
-                            <img class="toolbar-img" src="img/music-logo.jpg" alt="">
-                        </figure>
-                        <div class="music-info column">
-                            <p class="artist-name">Sinister</p>
-                            <p class="song-name">Brano Nome</p>
+                        <div class="album-preview row align-items-center grow-1">
+                            <figure class="toolbar-img">
+                                <img src="img/music-logo.jpg" alt="">
+                            </figure>
+                            <div>
+                                <p class="artist-name">Sinister</p>
+                                <p class="song-name">Brano Nome</p>
+                            </div>
                         </div>
-                        <div class="column">
+                        <div class="album-controls row">
                             <span class="toolbar-icon-left">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
@@ -64,30 +66,33 @@
                             </div>
                         </div>
                         <div class="time-bar-container row align-items-center">
-                            <div class="time-playing">
+                            <div class="time">
                                 0:25
                             </div>
                             <div class="time-bar">
                                 <div class="bar">
                                 </div>
+                                <div class="progress">
+                                </div>
                             </div>
-                            <div class="time-duration">
+                            <div class="time">
                                 4:35
                             </div>
                         </div>
                     </div>
                     <div class="toolbar-rigth row align-items-center">
-                        <div>
+                        <div class="volume-icon">
                             <i class="fa-solid fa-list"></i>
                         </div>
-                        <div>
+                        <div class="volume-icon">
                             <i class="fa-solid fa-display"></i>
                         </div>
-                        <div>
+                        <div class="volume-icon">
                             <i class="fa-solid fa-volume-high"></i>
                         </div>
-                        <div class="bar">
-
+                        <div class="volume-bar">
+                            <div class="bar"></div>
+                            <div class="progress"></div>
                         </div>
                     </div>
                 </div>
