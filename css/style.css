@@ -96,6 +96,7 @@ MAIN
 
 .app {
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .app-container
@@ -107,6 +108,7 @@ MAIN-APP
 .app-content {
     background-color: var(--Dark-blue);
     flex-grow: 1;
+    overflow: auto;
 }
 
 
@@ -118,6 +120,7 @@ SIDE
 .sidebar {
     background-color: var(--Black);
     width: 50px;
+    overflow: hidden;
 }
 
 
@@ -131,6 +134,7 @@ TOOLBAR
     flex-shrink: 0;
     background-color: var(--Dark-grey);
     color: white;
+    overflow: hidden;
 }
 
 .toolbar-img {
@@ -205,17 +209,13 @@ TOOLBAR
 }
 
 .toolbar-rigth {
-    gap: 10px;
+    gap: 5px;
     width: 25%;
 }
 
-.toolbar-rigth .bar {
-    width: 20%;
-    flex-grow: 1;
-}
 
 .time-bar-container {
-    width: 90%;
+    width: 70%;
 }
 
 .album-preview {
@@ -283,6 +283,10 @@ MEDIA QUERY
 
     .toolbar-img {
         width: 42px;
+    }
+
+    .toolbar-rigth{
+        gap: 10px;
     }
 
 }
