@@ -131,6 +131,9 @@ SIDE
     background-color: var(--Black);
     width: 50px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .playlist {
@@ -145,6 +148,9 @@ SIDE
     width: 50px;
     font-size: 14px;
     padding: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .side-home {
@@ -252,6 +258,9 @@ SIDE
 .profile {
     width: 50px;
     padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-img {
@@ -433,10 +442,7 @@ MEDIA QUERY
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .sidebar {
-        width: 230px;
-    }
-
+    
     .toolbar-left,
     .toolbar-rigth {
         width: 230px;
@@ -470,6 +476,7 @@ MEDIA QUERY
     .side-toolbar-item {
         width: 230px;
         padding: 6px 14px;
+        display: block;
     }
 
     .logo {
@@ -489,6 +496,30 @@ MEDIA QUERY
     
     .profile {
         margin: 10px 12px;
+    }
+
+    .side-icon-text{
+        display: inline;
+    }
+
+    .sidebar {
+        width: 250px;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .playlist{
+        display: block;
+    }
+
+    .side-icon{
+        width: 15%;
+    }
+
+    .sidebar-footer p,
+    .download::after {
+    display: block;
+}
 
 }
 
