@@ -86,7 +86,7 @@ UTILITY CLASS
     width: 100%;
 }
 
-.col-2{
+.col-6{
     width: calc(100% / 6);
 }
 
@@ -118,7 +118,7 @@ MAIN
 
 .app {
     flex-grow: 1;
-    overflow: hidden;
+     overflow: hidden;
 }
 
 
@@ -130,13 +130,10 @@ MAIN-APP
 .app-content {
     background-color: var(--Dark-blue);
     flex-grow: 1;
-    overflow: hidden;
+     overflow: auto;
     position: relative;
 }
 
-.main-app{
-    overflow: auto;
-}
 
 .menu-container{
     width: 100%;
@@ -182,8 +179,11 @@ MAIN-APP
  margin: 20px 12px;
 }
 
+.playlist-category-container{
+    padding-top: 24px;
+}
+
 .playlist-category-title{
-    padding-bottom: 24px;
     font-size: 24px;
     font-weight: 600;
     color: white;
@@ -196,8 +196,40 @@ MAIN-APP
     gap: 10px;
 }
 
-.playlist-category-items.col-2{
+/* .playlist-category-items.col-6{
     width: calc((100% - 50px) / 6);
+} */
+
+.playlist-category-items.col-6{
+    width: calc((100% - 10px) / 2);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    margin-top: 18px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-top: 10px;
+    color: #6E6E6E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card > .subtitle{
+    text-align: center;
+}
+
+.artist-img{
+    border-radius: 999px;
+    aspect-ratio: 1;
 }
 
 /* 
@@ -208,7 +240,6 @@ SIDE
 .sidebar {
     background-color: var(--Black);
     width: 50px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +291,6 @@ SIDE
 .logo-sm {
     width: 40px;
     aspect-ratio: 1;
-    padding: 0 auto;
     padding-top: 6px;
     padding-bottom: 8px;
 }
@@ -389,7 +419,6 @@ TOOLBAR
     flex-shrink: 0;
     background-color: var(--Dark-grey);
     color: white;
-    overflow: hidden;
 }
 
 .toolbar-img {
@@ -556,6 +585,7 @@ MEDIA QUERY
     }
 
     .sidebar {
+        width: 250px;
         align-items: flex-start;
     }
 
@@ -596,11 +626,7 @@ MEDIA QUERY
         display: inline;
     }
 
-    .sidebar {
-        width: 250px;
-        overflow: hidden;
-        align-items: flex-start;
-    }
+    
 
     .playlist{
         display: block;
@@ -627,11 +653,18 @@ MEDIA QUERY
     .volume-icon {
         font-size: 16px;
     }
+    .playlist-category-items.col-6{
+        width: calc((100% - 30px) / 4);
+    }
 
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .playlist-category-items.col-6{
+        width: calc((100% - 50px) / 6);
+    }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
