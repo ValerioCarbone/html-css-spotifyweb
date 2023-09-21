@@ -175,10 +175,13 @@ SIDE
 
 .logo {
     width: 50px;
+    justify-content: center;
+    display: flex;
 }
 
 .logo-sm {
-    width: 40%;
+    width: 40px;
+    aspect-ratio: 1;
     padding: 0 auto;
     padding-top: 6px;
     padding-bottom: 8px;
@@ -225,18 +228,19 @@ SIDE
 }
 
 .sidebar-cta p {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 .sidebar-cta {
     color: #6E6E6E;
-    width: 100%;
+    width: 50px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.download {
-    width: 50px;
-}
 
 .download::after {
     content: "";
@@ -251,13 +255,13 @@ SIDE
     border: 1px solid #6E6E6E;
     border-radius: 999px;
     aspect-ratio: 1;
-    padding: 1px 3px;
-    font-size: 6px;
+    padding: 0 2px;
+    font-size: 5px;
+    margin-left: 2px;
 }
 
 .profile {
-    width: 50px;
-    padding: 12px 0;
+    margin: 12px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,6 +294,10 @@ SIDE
 .sidebar-footer p,
 .download::after {
     display: none;
+}
+
+.download{
+    margin: 0 12px 
 }
 
 
@@ -476,18 +484,20 @@ MEDIA QUERY
     .side-toolbar-item {
         width: 230px;
         padding: 6px 14px;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .logo {
         width: 206px;
         padding: 24px 0px 24px 14px;
+        justify-content: flex-start;
     }
 
-    .download {
-        margin-left: 12px;
-        margin-right: 12px;
-        width: 206px;
+    .download-cta {
+    display: flex;
+    align-items: center;
     }
 
     .download-button {
@@ -496,8 +506,14 @@ MEDIA QUERY
     
     .profile {
         margin: 10px 12px;
+        width: 206px;
+        justify-content: flex-start;
     }
 
+    .profile-img{
+        width: 25px;
+        margin-right: 10px; 
+    }
     .side-icon-text{
         display: inline;
     }
@@ -519,7 +535,12 @@ MEDIA QUERY
     .sidebar-footer p,
     .download::after {
     display: block;
-}
+    }
+
+    .sidebar-cta{
+        width: 206px;
+        justify-content: flex-start;
+    }
 
 }
 
