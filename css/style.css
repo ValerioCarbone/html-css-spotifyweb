@@ -78,6 +78,10 @@ UTILITY CLASS
     flex-grow: 1;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 /* 
 COLOR PALETTE 
 */
@@ -118,9 +122,37 @@ MAIN-APP
 .app-content {
     background-color: var(--Dark-blue);
     flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-app{
     overflow: auto;
 }
 
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 113px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.menu-categories{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 36px;
+    justify-content: center;
+}
+
+.menu-categories-item{
+    color: var(--Light-Gray-Toolbar);
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
 
 /* 
 SIDE 
