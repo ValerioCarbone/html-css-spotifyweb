@@ -82,6 +82,14 @@ UTILITY CLASS
     flex-wrap: wrap;
 }
 
+.col-12{
+    width: 100%;
+}
+
+.col-2{
+    width: calc(100% / 6);
+}
+
 /* 
 COLOR PALETTE 
 */
@@ -168,6 +176,28 @@ MAIN-APP
     bottom: -5px;
     left: 33%;
 
+}
+
+.playlist-category{
+ margin: 20px 12px;
+}
+
+.playlist-category-title{
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.playlist-category-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.playlist-category-items.col-2{
+    width: calc((100% - 50px) / 6);
 }
 
 /* 
