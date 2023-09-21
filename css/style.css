@@ -154,6 +154,22 @@ MAIN-APP
     font-weight: 600;
 }
 
+.menu-categories-item.active{
+    position: relative;
+}
+
+.menu-categories-item.active::after{
+    content: '';
+    height: 2px;
+    width: 33%;
+    display: block;
+    background-color: var(--Light-Green);
+    position: absolute;
+    bottom: -5px;
+    left: 33%;
+
+}
+
 /* 
 SIDE 
 */
