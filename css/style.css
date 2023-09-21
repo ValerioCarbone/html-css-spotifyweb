@@ -28,7 +28,6 @@ a {
     color: currentColor;
 }
 
-
 /* 
 DEBUG 
 */
@@ -180,6 +179,11 @@ MAIN-APP
 
 }
 
+.menu-categories-item:hover{
+    color: white;
+    cursor: grab;
+}
+
 .playlist-category {
     margin: 20px 12px;
 }
@@ -201,9 +205,6 @@ MAIN-APP
     gap: 10px;
 }
 
-/* .playlist-category-items.col-6{
-    width: calc((100% - 50px) / 6);
-} */
 
 .playlist-category-items.col-6 {
     width: calc((100% - 10px) / 2);
@@ -258,6 +259,11 @@ MAIN-APP
     margin-right: 10px;
 }
 
+.upgrade-button:hover{
+    transform: scale(1.1);
+    cursor: grab;
+}
+
 .upgrade-cta>.row {
     height: 100%;
 }
@@ -266,36 +272,6 @@ MAIN-APP
     position: relative;
 }
 
-/* .card>figure::after{
-    content: '<i class="fa-regular fa-circle-play"></i>';
-    position: absolute;
-    z-index: -1;
-    color: white;
-    font-size: 44px;
-    text-align: center;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-
-} */
-
-
-/* .card-play-icon {
-    z-index: -1;
-    color: white;
-    font-size: 44px;
-    text-align: center;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-
-} */
 
 .card-play-icon {
     z-index: -1;
@@ -310,6 +286,10 @@ MAIN-APP
 
 .card-img {
     opacity: 1;
+}
+
+.playlist-category-items:hover{
+    cursor: grab;
 }
 
 .playlist-category-items:hover .card-img {
@@ -404,11 +384,32 @@ SIDE
     padding: 8px 10px;
 }
 
+.sidebar-playlist-add{
+    margin: 14px 12px;
+    color: #6E6E6E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .sidebar-playlist-item {
     margin: 14px 12px;
     color: #6E6E6E;
     font-size: 14px;
     font-weight: 600;
+}
+
+.sidebar-playlist-item:hover{
+    color: white;
+    cursor: grab;
+}
+
+.sidebar-playlist-add:hover{
+    color: white;
+    cursor: grab;
+}
+
+.sidebar-playlist-add:hover .add-button{
+    background-color: white;
 }
 
 .sidebar-section-title {
@@ -497,6 +498,15 @@ SIDE
     margin: 0 12px
 }
 
+.side-toolbar-item:hover{
+    color: white;
+    cursor: grab;
+}
+
+.download-cta:hover{
+    color: white;
+    cursor: grab;
+}
 
 /* 
 TOOLBAR 
@@ -623,6 +633,7 @@ TOOLBAR
 
 .time-bar:hover .progress {
     display: block;
+    cursor: grab;
 }
 
 .time-bar:hover .bar {
@@ -631,12 +642,32 @@ TOOLBAR
 
 .volume-bar:hover .progress {
     display: block;
+    cursor: grab;
 }
 
 .volume-bar:hover .bar {
     background-color: var(--Light-Green);
 }
 
+.song-name:hover{
+    color: white;
+    text-decoration: underline white;
+    cursor: grab;
+}
+
+.toolbar-icon-left:hover{
+    color: white;
+    cursor: grab;
+}
+
+.play-icon:hover{
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+/* :hover{
+    cursor: pointer;
+} */
 
 
 
