@@ -66,6 +66,10 @@ UTILITY CLASS
     justify-content: center;
 }
 
+.justifycon-end{
+    justify-content: flex-end;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -127,10 +131,11 @@ MAIN-APP
 */
 
 
-.app-content {
+.main-app{
+    overflow: auto;
+    height: 100%;
     background-color: var(--Dark-blue);
     flex-grow: 1;
-     overflow: auto;
     position: relative;
 }
 
@@ -154,7 +159,7 @@ MAIN-APP
 
 .menu-categories-item{
     color: var(--Light-Gray-Toolbar);
-    padding: 0 10px;
+    padding: 0 8px;
     font-size: 12px;
     font-weight: 600;
 }
@@ -230,6 +235,30 @@ MAIN-APP
 .artist-img{
     border-radius: 999px;
     aspect-ratio: 1;
+}
+
+.upgrade-cta{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000000c4;
+    height: 90px;
+}
+
+.upgrade-button{
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: #000000c4;
+    line-height: 42px;
+    padding: 0 40px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.upgrade-cta > .row{
+    height: 100%;
 }
 
 /* 
